@@ -5,25 +5,26 @@
 font-family: 'Archivo Black', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Tomorrow', sans-serif;
+font-family: 'Noto Sans', sans-serif;
 
 */
 
 body{
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 h1,h2,h3,h4,h5,h6{
     margin: 0;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: clamp(20px,4vw,40px);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: clamp(20px,4vw,66px);
+    size: 20%;
+    color: rgb(59, 186, 70);
+    text-shadow: -1px 3px 12px black;
 }
 
 
-p{
-    font-family: 'Roboto', sans-serif;  
-    font-size: clamp(16px,2vw,20px);
-    line-height: 1.625;
-    font-weight: 100;
-}
 
 /* nav */
 
@@ -58,7 +59,6 @@ p{
 }
 
 
-
 .nav ul{
     list-style-type: none;
     margin: 0 0 0 0;
@@ -77,14 +77,14 @@ li a{
     padding-left: 3vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
-    color: white;
+    color: whitesmoke;
     display: block;
     text-decoration: none;
 }
-li a:hover{
+/* li a:hover{
     /* background-color: rgb(52, 52, 52); */
-    color: rgb(91, 212, 101);
-}
+    /* color: rgb(91, 212, 101); */
+/* }*/ 
 
 
 
@@ -106,8 +106,8 @@ li a:hover{
      background-clip: content-box;
      background-repeat: no-repeat;
     color:whitesmoke;
-    /* padding: 3vw; */
-    height: 80vh;
+    height: 100vh;
+    /* padding-top: 3vh; */
 }
 
 .firstyear, .thirdyear{
@@ -122,38 +122,84 @@ li a:hover{
 }
 
 
-#home{
-    margin-top: 15vh;
-}
 
 .home{
-    margin: 0;
-    height: 38vw;
     background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(11, 11, 11, 0.8)), url(https://external-preview.redd.it/LfBFOhWml1RGukZr3iDjwmtlc0fcS_W8YoJlhk7EYkg.jpg?auto=webp&s=f862c421c5d32d2b54ba67830d65685207ca71f9);
     background-size:cover;
-     background-clip: content-box;
-     background-repeat: no-repeat;
+    background-clip: content-box;
+    background-repeat: no-repeat;
     
 }
 
 .content a{
     color: whitesmoke;
-    text-decoration: none;
-}
-
-.content a:hover{
-    text-decoration: underline;
+    text-shadow: 0px 0px 1px;
+    text-decoration: none           ;
 }
 
 
 
+/* content */
+.content {
+    text-align: center;
+    margin-top: 15vw;
+    font-size: clamp(13px,1.5vw,18px);
+    line-height: 1.625;
+}
 
+.content p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 4;
+}
+#hc{
+    line-height: 1.625;
+}
+
+
+
+
+
+.home h2,.home h4{
+    font-size: 3.5vw;
+    color: rgb(59, 186, 70);
+    text-shadow: -1px 3px 12px black;
+}
+
+
+/* img */
+img{
+    position: relative;
+    top: 13%;
+}
+
+.home img{
+    top: 18%;
+    left:3vw;
+
+}
+
+
+/* footer */
 footer{
     margin: 0;
     height: 100vh;
     background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(11, 11, 11, 0.8)), url(https://external-preview.redd.it/LfBFOhWml1RGukZr3iDjwmtlc0fcS_W8YoJlhk7EYkg.jpg?auto=webp&s=f862c421c5d32d2b54ba67830d65685207ca71f9);
     background-size:cover;
-     background-clip: content-box;
-     background-repeat: no-repeat;
+    background-clip: content-box;
+    background-repeat: no-repeat;
     
+}
+
+.b a{
+    background-color:rgb(65, 151, 72) ;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid rgb(65, 151, 72);
+    box-shadow: -1px 2px 6px black;
+}
+.content a:hover{
+    text-decoration: none;
+    background-color: rgb(232, 232, 232);
+    color: green;
+    box-shadow: 0px 0px 9px rgb(18, 102, 63);
 }
