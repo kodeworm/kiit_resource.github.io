@@ -1,0 +1,159 @@
+/* *{
+    border: 1px solid red;
+} 
+
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tomorrow', sans-serif;
+
+*/
+
+body{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: clamp(20px,4vw,40px);
+}
+
+
+p{
+    font-family: 'Roboto', sans-serif;  
+    font-size: clamp(16px,2vw,20px);
+    line-height: 1.625;
+    font-weight: 100;
+}
+
+/* nav */
+
+
+#logo{
+    font-family: 'Dosis';
+    font-size:36px;
+    color: rgb(91, 212, 101);
+    margin-left: 3vw;
+    text-decoration: none;
+}
+#logo:hover{
+    text-shadow: rgb(136, 255, 150) 0px 0px 2px;
+}
+.nav a{
+    text-decoration: none;
+}
+
+
+.nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(29, 29, 29);
+    z-index: 2;
+    top:0;
+}
+
+
+
+.nav ul{
+    list-style-type: none;
+    margin: 0 0 0 0;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(29, 29, 29);
+    
+}
+.nav li{
+    margin: auto;
+    font-family: 'Tomorrow', sans-serif;
+}
+li a{
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+li a:hover{
+    /* background-color: rgb(52, 52, 52); */
+    color: rgb(91, 212, 101);
+}
+
+
+
+/* general content */
+
+
+
+.firstyear img, .secondyear img, .thirdyear img, .fourthyear img{
+    margin-top: 5%;
+}
+
+.home, .firstyear, .secondyear, .thirdyear, .fourthyear{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(35, 39, 44); */
+    background: linear-gradient(rgba(35, 39, 44,0.95), rgba(35, 39, 44,0.95)), url(https://static.vecteezy.com/system/resources/previews/001/409/234/non_2x/low-poly-connections-design-free-vector.jpg);
+    background-position: 50% 50%;
+    background-size:cover;
+     background-clip: content-box;
+     background-repeat: no-repeat;
+    color:whitesmoke;
+    /* padding: 3vw; */
+    height: 80vh;
+}
+
+.firstyear, .thirdyear{
+    flex-direction: row-reverse;
+    background-color: rgb(30, 37, 44);
+    background: linear-gradient(rgba(35, 39, 44,0.85), rgba(32, 39, 40, 0.85)), url(https://t4.ftcdn.net/jpg/03/17/10/31/240_F_317103153_30l4TcizhBYAa9gkCJ95YMsDam2FVhGO.jpg);
+    background-position: 30% 10%;
+    background-size:cover;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    
+}
+
+
+#home{
+    margin-top: 15vh;
+}
+
+.home{
+    margin: 0;
+    height: 38vw;
+    background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(11, 11, 11, 0.8)), url(https://external-preview.redd.it/LfBFOhWml1RGukZr3iDjwmtlc0fcS_W8YoJlhk7EYkg.jpg?auto=webp&s=f862c421c5d32d2b54ba67830d65685207ca71f9);
+    background-size:cover;
+     background-clip: content-box;
+     background-repeat: no-repeat;
+    
+}
+
+.content a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.content a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+footer{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(rgba(44, 44, 44, 0.8), rgba(11, 11, 11, 0.8)), url(https://external-preview.redd.it/LfBFOhWml1RGukZr3iDjwmtlc0fcS_W8YoJlhk7EYkg.jpg?auto=webp&s=f862c421c5d32d2b54ba67830d65685207ca71f9);
+    background-size:cover;
+     background-clip: content-box;
+     background-repeat: no-repeat;
+    
+}
