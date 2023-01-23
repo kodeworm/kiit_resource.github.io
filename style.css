@@ -82,9 +82,9 @@ li a{
     text-decoration: none;
 }
 li a:hover{
-    background-color: rgb(52, 52, 52); 
-    color: rgb(91, 212, 101); 
- }
+     background-color: rgb(52, 52, 52); 
+     color: rgb(91, 212, 101); 
+}
 
 
 
@@ -169,13 +169,32 @@ li a:hover{
 /* img */
 img{
     position: relative;
-    top: 13%;
+    top: 17%;
 }
 
 .home img{
-    top: 18%;
-    left:3vw;
+    width: 45%;
+    height: 40vw;
+    left: 1.7%;
+}
 
+.firstyear img{
+    width:33%;
+    height: 32vw;
+    
+}
+.secondyear img{
+    width:33%;
+    height: 32vw;
+}
+.thirdyear img{
+    width:20%;
+    height: 32vw;
+}
+.fourthyear img{
+    width:33%;
+    height: 35vw;
+    top: 10%;
 }
 
 
